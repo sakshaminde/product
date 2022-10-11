@@ -29,4 +29,9 @@ public class Prime
 			}
 			return n;
 		}
+		public static void main(String[] args)
+		{
+			Prime P1 = new Prime();
+			P1.prime(5);
+		}
   }
