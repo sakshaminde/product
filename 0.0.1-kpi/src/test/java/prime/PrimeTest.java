@@ -13,6 +13,7 @@ public class PrimeTest {
 		assertEquals(true,P1.prime(2));
 		assertEquals(true,P1.prime(3));
 		assertEquals(false,P1.prime(6));
+		assertEquals(false,P1.prime(8));
 	}
 
 }
