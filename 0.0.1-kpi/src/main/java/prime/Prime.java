@@ -3,13 +3,13 @@ package prime;
 public class Prime 
 		{
 		int i, a=0, flag=0;
-		int n;
-		int prime(int n)
+		boolean prime(int n)
 		{
 			a=n/2;
 			if(n==0 || n==1)
 			{
 				System.out.println("Number is not prime");
+				return false;
 			}
 			else
 			{
@@ -19,15 +19,16 @@ public class Prime
 					{
 						System.out.println("Number is not prime");
 						flag=1;
-						break;
+						return false;
 					}
 				}
 				if(flag==0)
 				{
 					System.out.println("Number is prime");
+					return true;
 				}
 			}
-			return n;
+			return prime(n);
 		}
 		public static void main(String[] args)
 		{

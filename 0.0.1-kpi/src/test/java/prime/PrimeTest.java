@@ -1,5 +1,7 @@
 package prime;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
 public class PrimeTest {
@@ -8,12 +10,9 @@ public class PrimeTest {
 	public void check()
 	{
 		Prime P1 = new Prime();
-		int n = P1.prime(2);
-		int y = P1.prime(5);
-		int x = P1.prime(37);
-		Prime P2 = new Prime();
-		int a = P2.prime(34);
-		int b = P2.prime(35);
+		assertEquals(true,P1.prime(2));
+		assertEquals(true,P1.prime(3));
+		assertEquals(false,P1.prime(6));
 	}
 
 }
